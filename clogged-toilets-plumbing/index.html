@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clogged Toilets Plumbing | Greenacres, FL | (561) 437-3299</title>
+  <meta name="description"
+    content="Clogged Toilets Plumbing in Greenacres, FL. Fast, reliable toilet unclogging, drain cleaning, and plumbing repairs. Call (561) 437-3299 today." />
+  <style>
+    :root {
+      --blue: #0b5cad;
+      --blue-dark: #084a8c;
+      --accent: #ff8c00;
+      --text: #222;
+      --muted: #5b6b7b;
+      --bg: #f5f9fd;
+      --white: #fff;
+      --radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--blue);
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .call-btn {
+      background: var(--accent);
+      color: var(--white) !important;
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+      transition: background .2s;
+    }
+
+    .call-btn:hover {
+      background: #e07b00;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+      color: var(--white);
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 640px;
+      margin: 0 auto 32px;
+      opacity: .95;
+    }
+
+    .hero .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: transform .15s, background .2s;
+    }
+
+    .btn-primary:hover {
+      background: #e07b00;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--white);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: background .2s;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, .15);
+    }
+
+    /* ---------- Sections ---------- */
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 44px;
+    }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 30px 24px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+      transition: transform .15s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card .icon {
+      font-size: 2.4rem;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    /* Why us */
+    .why {
+      background: var(--white);
+    }
+
+    .why-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .why-item .check {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      color: var(--blue);
+      margin-bottom: 16px;
+      font-size: 1.4rem;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      align-items: flex-start;
+    }
+
+    .contact-row .ci {
+      font-size: 1.3rem;
+    }
+
+    .contact-row a {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    form {
+      background: var(--white);
+      padding: 28px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+    }
+
+    form label {
+      display: block;
+      font-weight: 600;
+      margin: 12px 0 4px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd6e0;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: 2px solid var(--blue);
+      border-color: transparent;
+    }
+
+    form button {
+      margin-top: 18px;
+      width: 100%;
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      padding: 14px;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    form button:hover {
+      background: var(--blue-dark);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--blue-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: .95rem;
+    }
+
+    footer .f-phone {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .nav-links a:not(.call-btn) {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <div class="logo">🚽 Clogged Toilets <span>Plumbing</span></div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a class="call-btn" href="tel:+15614373299">📞 (561) 437-3299</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Clogged Toilet? We'll Fix It Fast.</h1>
+    <p>Greenacres' trusted plumbing experts for clogged toilets, drain cleaning, and fast repairs — done right the first
+      time.</p>
+    <div class="cta-group">
+      <a class="btn-primary" href="tel:+15614373299">Call (561) 437-3299</a>
+      <a class="btn-outline" href="#contact">Request Service</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">From stubborn clogs to full plumbing repairs — we've got you covered.</p>
+      <div class="services-grid">
+        <div class="card">
+          <div class="icon">🚽</div>
+          <h3>Toilet Unclogging</h3>
+          <p>Fast removal of tough toilet clogs — no mess, no stress. Same-day service available.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛠️</div>
+          <h3>Drain Cleaning</h3>
+          <p>Professional drain and sewer line cleaning to keep water flowing freely throughout your home.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔧</div>
+          <h3>Toilet Repair &amp; Installation</h3>
+          <p>Leaks, running toilets, and full replacements — repaired or installed by experienced pros.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🚨</div>
+          <h3>Emergency Plumbing</h3>
+          <p>Overflowing toilet or burst pipe? Call us for rapid-response emergency plumbing help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <p class="section-sub">Local plumbers you can trust in Greenacres and the surrounding area.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="check">✓</div>
+          <p><strong>Fast Response</strong> — We show up on time and fix the problem quickly.</p>
+        </div>
+        <div class="why-item">
+          <div class="check">✓</div>
+          <p><strong>Upfront Pricing</strong> — No hidden fees. You know the cost before we start.</p>
+        </div>
+        <div class="why-item">
+          <div class="check">✓</div>
+          <p><strong>Local &amp; Reliable</strong> — Proudly serving Greenacres, FL and nearby communities.</p>
+        </div>
+        <div class="why-item">
+          <div class="check">✓</div>
+          <p><strong>Satisfaction Guaranteed</strong> — We stand behind every job we do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Call now or send us a message — we'll get back to you fast.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <div class="contact-row">
+            <span class="ci">📞</span>
+            <div><strong>Phone</strong><br /><a href="tel:+15614373299">(561) 437-3299</a></div>
+          </div>
+          <div class="contact-row">
+            <span class="ci">📍</span>
+            <div><strong>Address</strong><br />
+              <a href="https://www.google.com/maps/search/?api=1&query=5700+Lake+Worth+Rd,+Greenacres,+FL"
+                target="_blank" rel="noopener">
+                5700 Lake Worth Rd, Greenacres, FL
+              </a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="ci">🕒</span>
+            <div><strong>Hours</strong><br />Mon–Sat: 7am – 7pm<br />Emergency service available</div>
+          </div>
+        </div>
+        <form
+          onsubmit="event.preventDefault(); alert('Thanks! We\\'ll be in touch shortly. For immediate help, call (561) 437-3299.');">
+          <label for="name">Name</label>
+          <input id="name" type="text" required placeholder="Your name" />
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" required placeholder="(555) 555-5555" />
+          <label for="message">How can we help?</label>
+          <textarea id="message" rows="4" required placeholder="Describe your plumbing issue..."></textarea>
+          <button type="submit">Send Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Clogged Toilets Plumbing · 5700 Lake Worth Rd, Greenacres, FL · <a class="f-phone"
+        href="tel:+15614373299">(561) 437-3299</a></p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Clogged Toilets Plumbing",
+    "telephone": "(561) 437-3299",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5700 Lake Worth Rd",
+      "addressLocality": "Greenacres",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</body>
+
+</html>
